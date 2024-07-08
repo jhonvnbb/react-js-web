@@ -1,42 +1,121 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #141E30, #243B55);
+  color: #fff;
+  padding: 15px 0;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: thin;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-brand i {
+  margin-right: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.75);
+  background: #000;
+  padding: 0 7px;
+  color: #ffcc00;
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
-.card {
-  padding: 2em;
+.nav-link:hover {
+  color: #ffcc00 !important;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.read-the-docs {
-  color: #888;
+.link-icon i{
+  margin-right: 5px;
+  border: 1px solid rgb(255, 255, 255, 0.75);
+  background: #000;
+  padding: 2px 7px;
+  font-size: 1rem;
+  color: #ffcc00;
+  border-radius: 2px;
+}
+
+.nav-dropdown-item i{
+  color: #ffcc00;
+}
+
+.nav-dropdown-item:hover{
+  color: #ffcc00 !important;
+}
+
+.offcanvas-header {
+  background-color: #243B55;
+  color: #fff;
+}
+
+.offcanvas-title {
+  font-weight: bold;
+}
+
+.offcanvas-body {
+  background-color: #f8f9fa;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #243B55;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #1B2A41;
+}
+
+a {
+  color: #243B55;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #1B2A41;
+  text-decoration: none;
+}
+
+.google-login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db4437;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.google-login-button:hover {
+  background-color: #c33d2e;
 }
