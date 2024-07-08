@@ -66,27 +66,28 @@ function NavigationBar() {
               src={LogoPerusahaan} 
               alt="Company Logo" 
               className="company-logo mb-2"
-              style={{ width: '80px', height: '80px' }} 
+              style={{ width: 'auto', height: '125px' }} 
             />
-            <span className="company-name">Rolex</span>
+            <span className="company-name"><i className="bi bi-gem"></i> Rolex</span>
           </div>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Username</Form.Label>
-              <Form.Control type="text" placeholder="Enter username" />
+              <Form.Control type="text" placeholder="Username" />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-4" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" />
             </Form.Group>
-            <Button variant="primary" type="submit" className="w-100 mb-2">
+            <Button variant="primary" type="submit" className="w-100 mb-4">
               Submit
             </Button>
-            <div className="d-flex justify-content-between mb-3">
+            <div className="link d-flex justify-content-between mb-4">
               <a href="#" onClick={handleClose}>Forgot Password?</a>
               <a href="#" onClick={handleClose}>Sign Up</a>
             </div>
+            <div className="divider-text mb-3">Or</div>
             <GoogleLogin
               clientId="184353935641-hpm68qknnvr5t7pqolbn7mg93eqttvvb.apps.googleusercontent.com"
               buttonText="Login with Google"
@@ -96,7 +97,7 @@ function NavigationBar() {
               className="w-100 google-login-button"
             />
           </Form>
-          <div className="footer mt-4 pt-2 border-top">
+          <div className="navbar-footer mt-4 pt-2 border-top">
             <p className="text-center small mb-0">&copy; 2024 Rolex. All rights reserved.</p>
           </div>
         </Offcanvas.Body>

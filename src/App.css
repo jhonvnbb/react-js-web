@@ -1,4 +1,5 @@
-/* App.css */
+/* Font Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -7,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Navbar Start */
 
 .custom-navbar {
   background: linear-gradient(90deg, #141E30, #243B55);
@@ -78,44 +81,64 @@ body {
   background-color: #f8f9fa;
 }
 
+.company-name{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.company-name i{
+  color: #ffcc00;
+}
+
 .form-label {
   font-weight: bold;
 }
 
-.btn-primary {
-  background-color: #243B55;
-  border: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-  background-color: #1B2A41;
-}
-
-a {
+.link a {
   color: #243B55;
   transition: color 0.3s ease-in-out;
 }
 
-a:hover {
+.link a:hover {
   color: #1B2A41;
-  text-decoration: none;
 }
 
 .google-login-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #db4437;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .google-login-button:hover {
-  background-color: #c33d2e;
+  color: #000 !important;
 }
+
+.navbar-footer{
+  font-style: italic;
+  font-weight: 600;
+  color: #777;
+}
+
+.divider-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider-text::before,
+.divider-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #999;
+  margin: 0 7px;
+}
+
+/* close button */
+.offcanvas-header .btn-close {
+  filter: invert(1);
+}
+
+/* Navbar End */
+
